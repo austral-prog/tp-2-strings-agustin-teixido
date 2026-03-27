@@ -36,8 +36,8 @@ def ficha():
     nomApe = apellido+ " " + nombre
     archivo = (apellido+"_"+nombre).lower()
     caracteres = len(nomApe)
-    iniNom = nombre[0]
-    iniApe = apellido[0]
+    iniNom = nombre[0].upper()
+    iniApe = apellido[0].upper()
     nom, dominio = email.split("@")
     promedio = int((notaUno + notaDos + notaTres) / 3)
 
@@ -49,12 +49,12 @@ def ficha():
     print("Nombre: ", nomb)
     print("Email: ", email)
     print("Caracteres en nombre: ", caracteres)
-    print("Iniciales: ", iniNom, iniApe)
+    print("Iniciales: ", iniNom + iniApe)
     print("Usuarios: ", usuario)
     print("Email valido: ", "@" in email)
     print("Dominio: ", dominio)
     print("Nombre para el archivo: ", archivo)
-    print("Codigo secreto: ", nomApe[::-1])
+    print("Codigo secreto: ", nomApe[::-1].upper())
     print("Nota 1: ", notaUno)
     print("Nota 2: ", notaDos)
     print("Nota 3: ", notaTres)
