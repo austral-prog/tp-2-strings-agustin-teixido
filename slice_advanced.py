@@ -4,7 +4,7 @@ def slice_advanced():
     """
     pass
 
-    palabra =  input("Ingrese una palabra: ")
-    print(palabra[3 :: 2])
+    texto = input()
+    resultado = texto[4::2]
+    print(resultado)
 
-#slice_advanced()

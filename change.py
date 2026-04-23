@@ -6,8 +6,13 @@ def change():
 
     # Preguntas
     gasto = float(input("Ingresar gasto:"))
-    print(gasto)
+
     recibido = int(input("Dinero  recibido:"))
+
+    # Display
+    print("Ingresar gasto:")
+    print(gasto)
+    print("Dinero recibido")
     print(recibido)
     print("")
     print("Vuelto")
@@ -23,4 +28,3 @@ def change():
     print("Centavos:")
     print(centavos)
 
-#change()

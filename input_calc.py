@@ -4,22 +4,19 @@ def rectangle():
     """
     pass
 
-    # Preguntas
-    base = input("Base: ")
-    altura = input("Altura: ")
+    # Leer datos
+    base = int(input("Ingrese la base: "))
+    altura = int(input("Ingrese la altura: "))
 
-    # Calculos
-    base = int(base)
-    altura = int(altura)
+    # Cálculos
+    area = base * altura
+    perimetro = 2 * (base + altura)
 
-    area = (base * altura)
-    perimetro = (base*2) + (altura*2)
+    # Mostrar resultados
+    print(f"Base: {base}")
+    print(f"Altura: {altura}")
+    print(f"Area: {area}")
+    print(f"Perimetro: {perimetro}")
 
-    # Output
-    print("Base: ", base)
-    print("Altura: ", altura)
-    print("Area: ", area)
-    print("Perimetro: ", perimetro)
 
-#rectangle()
 

@@ -8,27 +8,43 @@ def string_methods():
     multilinea = """Linea 1
     Linea 2
     Linea 3"""
-    lineaUno = str(multilinea[0:7])
-    lineaDos = str(multilinea[12:19])
-    lineaTres = str(multilinea[24:32])
 
-    print("Strip: ", nombre.strip())
-    print("Lstrip: ", nombre.lstrip())
-    print("Rstrip", nombre.rstrip())
-    print("Upper: ", frase.upper())
-    print("Lower: ", frase.lower())
-    print("Title: ", frase.title())
-    print("Find: ", frase.find("gran"))
-    print("Replace: ", frase.replace("programacion", "desarrollo"))
-    print("count: ", frase.count("a"))
-    print("Contiene Python: ", "Python" in frase)
-    print("Contiene Java: ", "java" in frase)
-    print("Slice: ", frase[0:6])
-    print("Paso: ", "Python"[0::2])
-    print("Reverso: ", "Python"[::-1])
-    print(f"Formato:{nombre}sabe Python")
-    print(lineaUno)
-    print(lineaDos)
-    print(lineaTres)
+    # 1. strip, lstrip, rstrip
+    print("Strip:", nombre.strip())
+    print("Lstrip:", nombre.lstrip())
+    print("Rstrip:", nombre.rstrip())
 
-string_methods()
+    # 2. upper, lower, title
+    print("Upper:", frase.upper())
+    print("Lower:", frase.lower())
+    print("Title:", frase.title())
+
+    # 3. find
+    print("Find:", frase.find("gran"))
+
+    # 4. replace
+    print("Replace:", frase.replace("programacion", "desarrollo"))
+
+    # 5. count
+    print("Count:", frase.count("a"))
+
+    # 6. operador in
+    print("Contiene Python:", "Python" in frase)
+    print("Contiene Java:", "Java" in frase)
+
+    # 7. slicing
+    print("Slice:", frase[:6])
+
+    # 8. slicing con paso
+    print("Paso:", "Python"[::2])
+
+    # 9. reverso
+    print("Reverso:", "Python"[::-1])
+
+    # 10. f-string
+    print("Formato:", f"{nombre.strip()} sabe Python")
+
+    # 11. multilinea (CORREGIDO para evitar espacios ocultos)
+    for linea in multilinea.splitlines():
+        print(linea.strip())
+
